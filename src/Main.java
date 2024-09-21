@@ -1,7 +1,11 @@
+import controller.ManagerProject;
+import view.GraphicalInterface;
+
 public class Main {
     public static void main(String[] args) {
-    GerenciadorProjeto gerenciador = new GerenciadorProjeto();
-    Menu menu = new Menu(gerenciador);
-    menu.exibir();
+            ManagerProject manager = new ManagerProject();
+            GraphicalInterface graphicalInterface = new GraphicalInterface(manager);
+            graphicalInterface.setVisible(true);
     }
 }
+
